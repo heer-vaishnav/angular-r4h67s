@@ -6,13 +6,11 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
-
   @Input() receivedParentMessage: string;
 
   @Output() messageToEmit = new EventEmitter<string>();
 
   messageToSendC: string = "Hello Parent !";
-
 
   constructor() { }
 
@@ -22,5 +20,4 @@ export class ChildComponent implements OnInit {
   sendMessageToParent(message: string) {
     this.messageToEmit.emit(message)
   }
-
 }

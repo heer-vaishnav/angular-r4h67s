@@ -15,18 +15,11 @@ export class ParentComponent implements OnInit {
   ngOnInit() {
   }
 
-
-
   sendToChild(message: string) {
     this.messageToSendP = message;
   }
 
-
-
   getMessage(message: string) {
     this.receivedChildMessage = message;
   }
-
-
-
 }
